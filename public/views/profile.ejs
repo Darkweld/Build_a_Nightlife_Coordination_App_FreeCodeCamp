@@ -1,0 +1,74 @@
+<html>
+    
+    <head>
+        
+        <link href="/public/css/css.css" rel="stylesheet" type="text/css">  
+        
+    </head>
+    
+    <body>
+    <div class = "profile-container">
+        
+            <div class = "profile github-profile">
+                <%if (user.tokens.github) { %>
+                
+                <p><span class = "profile-heading">Github Username:</span> <%= user.github.username %></p>
+                <p><span class = "profile-heading">Github Profile:</span> <a href =<%= user.github.profileUrl %>><%= user.github.profileUrl %></a></p>
+                <% } %>
+        <div class = "loginbutton loginbutton-github">
+            <p id = "github-text">Sign in with Github</p>
+            <img src = "/public/images/github.png" class = "logo"><a id = "github" href = "https://nightlife-coordination-app-darkweld.c9users.io/auth/github"></a>
+        </div>
+    </div>
+    <div class = "profile google-profile">
+        <%if (user.tokens.google) { %>
+                
+                <p><span class = "profile-heading">Google Username:</span> <%= user.google.username %></p>
+                <% } %>
+        <div class = "loginbutton loginbutton-google">
+            <p id = "google-text">Sign in with Google</p>
+            <img src = "/public/images/google.png" class = "logo"><a id = "google" href = "https://nightlife-coordination-app-darkweld.c9users.io/auth/google"></a>
+        </div>
+    </div>
+    <div class = "profile twitter-profile">
+        <%if (user.tokens.twitter) { %>
+                
+                <p><span class = "profile-heading">Twitter Username:</span> <%= user.twitter.username %></p>
+                <% } %>
+        <div class = "loginbutton loginbutton-twitter">
+            <p id = "twitter-text">Sign in with Twitter</p>
+            <a id = "twitter" href = "https://nightlife-coordination-app-darkweld.c9users.io/auth/twitter"><img src = "/public/images/twitter.png" class = "logo"></a>
+        </div>
+    </div>
+    <div class = "profile facebook-profile">
+        <%if (user.tokens.facebook) { %>
+                
+                <p><span class = "profile-heading">Facebook Username:</span> <%= user.facebook.username %></p>
+                <% } %>
+        <div class = "loginbutton loginbutton-facebook">
+            <p id = "facebook-text">Sign in with Facebook</p>
+            <a id ="facebook" href = "https://nightlife-coordination-app-darkweld.c9users.io/auth/facebook"><img src = "/public/images/facebook.png" class = "logo"></a>
+        </div>
+    </div>
+    
+    </div>
+    
+    <div class =  "link-container">
+      <a href = "https://nightlife-coordination-app-darkweld.c9users.io/">Home</a>
+      <a href = "https://nightlife-coordination-app-darkweld.c9users.io/logout">Logout</a>
+    </div>
+        
+   <script type = "text/javascript" src = "/ajax/requests.js"></script>
+   <script type = "text/javascript" src = "/controllers/profileController.js"></script>
+        
+        
+        
+        
+    </body>
+    
+    
+    
+    
+    
+    
+</html>

@@ -1,0 +1,117 @@
+body {
+    background-color: darkslategray;
+}
+.login-container {
+    width: 270px;
+    margin: 10% auto 10% auto;
+    background-color: dimgray;
+    border-radius: 10px;
+    padding: 5px;
+}
+.loginbutton {
+    margin: 10px auto 10px auto;
+    width: 250px;
+    height: 42px;
+    border-radius: 10px;
+    position: relative;
+}
+.loginbutton-github {
+    background-color: black;
+}
+.loginbutton-github .logo{
+    background-color: white;
+}
+.loginbutton-google {
+    background-color: #4285F4;
+}
+.loginbutton-google .logo{
+    background-color: #FFFFFF;
+}
+.loginbutton-twitter {
+    background-color: #00aced;
+}
+.loginbutton-twitter .logo{
+    background-color: #c0deed;
+}
+.loginbutton-facebook {
+    background-color: #3b5998;
+}
+.loginbutton-facebook .logo{
+    background-color: #8b9dc3;
+}
+.logo {
+    height: 32px;
+    width: 32px;
+    padding: 5px;
+    border-radius: 10px 0 0 10px;
+}
+.loginbutton a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    border-radius: 10px;
+}
+.loginbutton p {
+    position: absolute;
+    color: white;
+    width: 100%;
+    height: 100%;
+    top: -5px;
+    left: 15px;
+    display: inline-block;
+    text-align: center;
+}
+
+
+
+
+
+.profile p {
+    text-align: center;
+}
+.profile-container {
+    width: 350px;
+    margin: 10% auto 10% auto;
+    background-color: dimgray;
+    border-radius: 10px;
+    padding: 5px;
+}
+.profile {
+    width: 300px;
+    background-color: #80b3b3;
+    border-radius: 10px;
+    margin: 10px auto 10px auto;
+    padding: 5px;  
+}
+.profile-heading {
+    font-weight: 700;
+}
+
+
+
+
+.link-container {
+    text-align: center;
+    background-color: #80b3b3;
+    position: fixed;
+    padding: 5px;
+    border-radius: 10px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto 10px auto;
+}
+.link-container a{
+    color: white;
+    display: inline-block;
+    background-color: dimgray;
+    padding: 10px;
+    width: 100px;
+    margin: 0 auto 0 auto;
+    border-radius: 10px;
+    border: 1px solid white;
+    text-decoration: none;
+}

@@ -1,0 +1,1 @@
+Basic node boilerplate utilizing express, mongodb, mongoose, passport, and dotenv for use with my freecodecamp projects.
