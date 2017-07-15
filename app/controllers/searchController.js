@@ -35,8 +35,8 @@
 
 
                     loader.classList.add("displayNone");
-                    nightlife.classList.remove("displayNone");
-                    pagination.classList.remove("displayNone");
+                    nightlife.classList.add("displayNone");
+                    pagination.classList.add("displayNone");
                 }();
             }
             nightlife.innerHTML = "";
