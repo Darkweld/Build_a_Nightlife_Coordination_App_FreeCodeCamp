@@ -23,7 +23,6 @@
 
             if (businessObj.error) {
                 return function() {
-                    console.log("true");
                     nightlife.innerHTML = "";
                     pagination.innerHTML = "";
 
@@ -36,6 +35,7 @@
 
                     loader.classList.add("displayNone");
                     pagination.classList.add("displayNone");
+                    nightlife.classList.remove("displayNone");
                 }();
             }
             nightlife.innerHTML = "";
