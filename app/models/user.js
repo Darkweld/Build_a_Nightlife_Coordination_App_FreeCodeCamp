@@ -27,7 +27,8 @@ var User = new Schema({
     google: String,
     twitter: String,
     facebook: String
-   }
+   },
+   visiting: [{ type: Schema.ObjectId, ref: 'Business' }],
 });
 
 

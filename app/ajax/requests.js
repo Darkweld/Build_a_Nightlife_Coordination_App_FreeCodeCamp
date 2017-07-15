@@ -1,7 +1,6 @@
 'use strict';
 
-var mainUrl = "https://nightlife-coordination-app-darkweld.c9users.io"
-
+var mainUrl = "https://nightlife-coordination-app-darkweld.c9users.io";
 var xhttp = {
    ready: function ready (fn) {
       document.addEventListener('DOMContentLoaded', fn, false);

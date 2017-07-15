@@ -89,29 +89,171 @@ body {
 .profile-heading {
     font-weight: 700;
 }
+.profile .businessName {
+    width: auto;
+}
+
+
+
+
+
+
+.search-container {
+    margin: 10% auto 0 auto;
+    width: 300px;
+    height: 70px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.search-container input {
+    border: 3px solid #80b3b3;
+    border-radius: 10px;
+}
+.searchSubmit {
+    margin: 0 0 0 10px;
+    float: right;
+    background-color: darkslategray;
+    height: 35px;
+    padding: 2px;
+    position: relative;
+}
+.search {
+    width: 225px;
+    background-color: darkslategray;
+    height: 45px;
+    font-size: 20px;
+    padding: 0 5px 0 5px;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
 
 
 
 
 .link-container {
     text-align: center;
-    background-color: #80b3b3;
+    background-color: dimgray;
     position: fixed;
     padding: 5px;
-    border-radius: 10px;
-    bottom: 0;
+    top: 0;
     left: 0;
     right: 0;
     margin: 0 auto 10px auto;
+    z-index: 2;
 }
 .link-container a{
     color: white;
     display: inline-block;
-    background-color: dimgray;
+    background-color: #80b3b3;
     padding: 10px;
     width: 100px;
     margin: 0 auto 0 auto;
     border-radius: 10px;
     border: 1px solid white;
     text-decoration: none;
+}
+
+
+
+
+
+.pagination .current {
+    color: red;
+    background-color: white;
+}
+.mainLink {
+    display:inline-block;
+    text-align: center;
+    background-color: darkslategray;
+    margin: 10px;
+    cursor: pointer;
+    color: white;
+    flex: 1;
+}
+.pagination {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items:center;
+    justify-content: space-between;
+    margin: 0 auto 10px auto;
+    background-color: dimgray;
+    width: 300px;
+    border: 5px solid black;
+}
+.nightlife-bigDiv {
+   display: flex;
+   align-items: stretch;
+   justify-content: center;
+   flex-flow: row wrap;
+   align-content: flex-end;
+   margin-bottom: 10%;
+}
+.nightlife-div {
+    margin: 10px;
+    background-color: #80b3b3;
+    text-align: center;
+    border: 5px solid black;
+    background-clip: content-box;
+    box-shadow: inset 0 0 0 5px dimgray;
+}
+.nightlife-img {
+    height:200px;
+    width: 200px;
+}
+.goingUrl, .yelpUrl{
+    margin: 10px auto 10px auto;
+    display: block;
+    background-color: #80b3b3;
+    border-radius: 10px;
+    border: 3px solid darkslategray;
+    color: darkslategray;
+    cursor: pointer;
+    padding: 5px;
+}
+.goingUrl:hover, .yelpUrl:hover{
+    background-color: black;
+    color: white;
+}
+.yelpUrl {
+    text-decoration: none;
+}
+.businessName {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    width: 200px;
+    height: 50px;
+    margin: 10px 0;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.visitorNum {
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-size: 20px;
+    margin: 0;
+}
+.displayNone {
+    display: none;
+}
+.loader {
+	margin: 50px auto 0 auto;
+	border: 16px solid #f3f3f3;
+	border-radius: 50%;
+	border-top: 16px solid #80b3b3;
+	width: 120px;
+	height: 120px;
+	animation: spin 2s linear infinite;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+.error {
+    text-align: center;
+    color: red;
 }

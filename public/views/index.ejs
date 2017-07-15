@@ -3,10 +3,21 @@
     
     <link href = "public/css/css.css" type = "text/css" rel = "stylesheet">
     
-    
   </head>
   
+  
+  
+  
+  
   <body>
+    
+  <div class = "search-container">
+    <form id = "searchForm" action = "#">
+      <input type = "search" id = "Search" placeholder = "Enter location..." class = "search">
+      <input type = "image" alt = "submit" src = "/public/images/magnifier.png" id = "searchButton" class = "searchSubmit">
+    </form>
+  </div>
+      
     <div class =  "link-container">
     <% if (user) { %>
       <a href = "https://nightlife-coordination-app-darkweld.c9users.io/profile">Profile</a>
@@ -16,9 +27,32 @@
     <% } %>
     </div>
     
+  <div class = "main-container">
+    <div class = "loader displayNone" id = "loader"></div>
+    <div class = "pagination displayNone" id = 'pagination'></div>
+    <div class = "nightlife-container displayNone" id = "nightlife">
+  </div>
+      
+      
+    </div>
     
     
     
+    
+    <script type = "text/javascript" src = "/ajax/requests.js"></script>
+    <script type = "text/javascript" src = "/controllers/searchController.js"></script>
+    
+      <%if (search) { %>
+      <script type = "text/javascript" defer>
+      
+      window.addEventListener('load', function() {
+      document.getElementById("Search").value = "<%= search %>";
+      document.getElementById("searchButton").click();
+      document.getElementById("Search").focus();
+      }, false);
+      
+      </script>
+      <% } %>
     
   </body>
   
