@@ -35,7 +35,6 @@
 
 
                     loader.classList.add("displayNone");
-                    nightlife.classList.add("displayNone");
                     pagination.classList.add("displayNone");
                 }();
             }
